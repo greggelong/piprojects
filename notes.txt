@@ -1,0 +1,110 @@
+I started working with the raspberry pi zero 2w.
+(The raspberry pi imager has the ctrl shift x to add remote login info
+But it didn’t work for me so I did the full set up  and configured from the pi itself and still have plenty of space and a last resort to access it with keyboard and screen)
+https://www.raspberrypi.com/documentation/computers/remote-access.html
+
+At first I tried a headless setup. But it really didn’t configure easily and I could not find it on the wifi
+
+So I put a regular os installation and authorized ssh with a keyboard and screen hooked up.  
+Raspberry pi zero 2 w
+The user name is : gelong 
+The password is : *****
+
+You can get the host name when you open and terminal and type
+hostname
+you can get the ip address with 
+
+hostname -I
+
+the ip address was 192.168.1.14 , but perhaps this is dynamically created 
+and it will be different each time
+
+you can use the keyboard and screen to get the address
+
+see https://pimylifeup.com/raspberry-pi-ip-address/
+for some info on using ping to ping the host name (never worked for me on linux)
+but it works from windows command prompt
+ping gelong
+or 
+ping gelong.local
+and you can get the ip address
+
+if this doesn’t work you can try 
+ nmap to ping all the ip addresses in a range
+
+it may be unknown but will show the MAC address
+
+*********************
+or we could log into the router but this is a last resort as Chinese unicom router may be easy to mess up
+
+
+but you may be able to just use the hostname with putty on windows and 
+
+and vs code
+
+ways to log in 
+
+from windows command line 
+ssh name@hostname.local
+
+or 
+ssh name@ipaddress
+
+for example 
+
+today I logged on through linux command line, windows command line,
+using
+
+ssh gelong@192.168.1.14
+or 
+ssh gelong@gelong.local 
+
+it will ask for your password
+
+in vs code I added an extension and was able to remote in at the bottom left corner
+
+---------
+a good way to shut down when you are working remote
+is 
+
+sudo halt
+sudo shutdown -h now
+
+https://raspberryexpert.com/shutdown-raspberry-pi/
+----------------
+
+raspberry pi 4 
+
+I am flashing a new version on the Os on the raspberry pi 
+
+I will call it 
+
+User name will be :gregpi4
+
+And password will be: ********
+
+I will use vnc and ssh for this one
+
+Some info on how that setup works is  here
+
+https://www.raspberrypi.com/documentation/computers/remote-access.html#virtual-network-computing-vnc
+A direct connection(on the same network is free)
+
+A cloud connection which would allow connection your raspberry pi over the internet will cost some money.
+
+I also connected raspberry pi zero (gelong) with vnc it wasn’t really useful
+
+I imagine with this one I will be using ssh 
+
+
+I can log into the gregpi4 ssh like this from the windows cmd
+
+C:\Users\gkrei>ssh gregpi4@gregpi4.local
+
+And enter password
+
+I could long in to vnc the same way 
+
+Just entering gregpi4.local  
+
+Then entering my name and password
