@@ -108,3 +108,11 @@ I could long in to vnc the same way
 Just entering gregpi4.local  
 
 Then entering my name and password
+
+
+mv expressvpn_3.28.0.6-1_armhf.deb ~/Downloads
+
+I downloaded the file on my windows and popped it into the directory
+
+and then moved it arround usign the termanal 
+
