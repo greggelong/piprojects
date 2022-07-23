@@ -22,3 +22,11 @@ same time update the repo
 gelong@gelong:~/Documents/remotePi/piprojects $ 
 
 this is the location on raspi
+
+
+in China pushing to github is erratic so I needed to install a
+
+vpn
+
+lsusb
+
