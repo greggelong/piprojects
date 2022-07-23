@@ -11,3 +11,14 @@ I am most interested in how to deal with, what I think is the weakest part of ra
 
 I will see how well I can get readings from two LDRs using capacitors and timing.  Can I make a workable light following vehicle?  Will cap size, 1mf or 10mf allow for better rages?
 
+
+juliy 23 1
+I have loged into raspi using ssh on vs code
+
+then I cloned this repo to the the raspi to write code and at the
+
+same time update the repo
+
+gelong@gelong:~/Documents/remotePi/piprojects $ 
+
+this is the location on raspi
