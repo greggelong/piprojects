@@ -2,11 +2,16 @@ from gpiozero import PWMLED
 from time import sleep
 
 led = PWMLED(17)
-
+b =0
+i = 0.1
 while True:
-    led.value =0 
-    sleep(1)
-    led.value = 0.5
-    sleep(1) 
-    led.value =1 
-    sleep(1)
+    if b =< 1:
+
+        led.value = b
+
+        sleep(1)
+
+        b = b +i 
+    else:
+        b =  0 
+    
