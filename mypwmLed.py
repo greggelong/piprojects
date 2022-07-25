@@ -5,7 +5,8 @@ led = PWMLED(17)
 b =0
 i = 0.1
 while True:
-    if b =< 1:
+    print("light level: ",b)
+    if b <= 1:
 
         led.value = b
 
